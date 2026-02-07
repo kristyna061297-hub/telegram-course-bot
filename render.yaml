@@ -10,7 +10,7 @@
     name: telegram-course-bot\
     runtime: python\
     buildCommand: "pip install -r requirements.txt"\
-    startCommand: "gunicorn bot:app"\
+    startCommand: "python bot.py"\
     envVars:\
       - key: PYTHON_VERSION\
         value: 3.11\
