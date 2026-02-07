@@ -249,7 +249,7 @@ def scheduler():
         check_subscriptions()
         time.sleep(86400)
 
-threading.Thread(target=scheduler, daemon=True).start()
+
 
 # ====== ЗАПУСК ======
 print("Бот запущен...")
@@ -260,3 +260,5 @@ threading.Thread(target=run_flask, daemon=True).start()
 
 bot.polling(none_stop=True)
 
+if __name__ == "__main__":
+    bot.polling()
